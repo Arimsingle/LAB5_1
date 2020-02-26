@@ -1,0 +1,19 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+    <h1> Computer</h1>
+    <ul>
+        <% computers.forEach(function(computer){ %>
+        <div class="images">
+            <li>
+                <h2><%= computer.Name %></h2>
+            </li>
+            <img src="<%= computer.Image %>" height="80" width="80" />
+        </div>
+        <% }); %>
+    </ul>
+</body>
+
+</html>
